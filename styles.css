@@ -1,0 +1,129 @@
+/*  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5% ;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+
+}
+.container .card{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: .7rem;
+    display: flex;
+    flex-direction: column;
+}
+.container .card .image .desktop{
+    display: none;
+}
+.container .card .image .mobile{
+    width: 100%;
+    max-height: 30rem;
+    object-fit: cover;
+    object-position: 100% 40%;
+    border-radius: .7rem .7rem 0 0;
+}
+.container .card .image .perfum{
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: hsl(228, 12%, 48%);
+}
+.container .card .perfum .doller {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3.5rem;
+    margin-bottom: 2.3rem;
+}
+.container .card .perfum h4{
+    margin-left: 30px;
+    margin-top: 40px;
+    letter-spacing: 7px;
+    font-size: 12px;
+}
+.container .card .perfum h1{
+    margin-left: 30px;
+    margin-top: 35px;
+    font-size: 35px;
+    
+}
+.container .card .perfum p{
+    margin-left: 30px;
+    margin-top: 35px;
+    
+}
+.container .card .perfum .doller{
+    margin-left: 30px;
+    margin-top: 40px;
+
+}
+.container .card .perfum .doller h2{
+    font-size: 3rem;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+}
+.container .card .perfum .doller span{
+    font-size: 1.6rem;
+    color:  hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+.container .card .perfum .btn{
+    background-color: hsl(158, 36%, 37%);
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    border-radius: .7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    max-width: 29rem;
+    height: 4.8rem;
+    margin-left: 30px;
+    transition: all 3s ease;
+}
+.container .card .perfum .btn:hover{
+    background-color: hsl(158, 36%, 37%);
+} 
+@media(min-width: 628px){
+    body{
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+    }
+    .container .card{
+        flex-direction: row;
+        max-width: 70rem;
+    }
+    .container .card .image{
+        flex-basis: 50%;
+
+    }
+    .container .card .image .mobile{
+        display: none;
+    } 
+    .container .card .image .desktop{
+        display: block;
+        border-radius: .7rem 0 0 .7rem;
+        max-width: 100%;
+        height: 100%;
+        display: inherit;
+    }
+    .container .card .perfum{
+        flex-basis: 50%;
+    }
+    .container.card .perfum h1{
+        font-size: 4rem;
+    }
+    .container .card .perfum p{
+        font-size: 1.6rem;
+        max-width: 28rem;
+    }
+
+}
